@@ -1,14 +1,22 @@
 .skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+
   &__skill {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
+    padding: 1.2rem 2.4rem;
     font-size: 1.6rem;
-    background: rgba(#999, 0.2);
-    border-radius: $commonBorderRadius;
+    background-color: #eef2ff; // soft indigo tone
+    color: #1e3a8a; // deep blue
+    border-radius: 30px;
     font-weight: 600;
-    color: #777;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: #dbeafe;
+    }
   }
 }
