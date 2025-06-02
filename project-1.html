@@ -75,11 +75,17 @@
         <h1 class="heading-primary">SecVault</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            A browser-based file vault that encrypts files client-side with AES-256 before upload. Your files stay your files—end-to-end.
+            SecVault is a very simple way to securely store files. Just choose a file, hit "Encrypt & Upload," and it’ll be locked down with AES-256 encryption right in your browser. The server only gets the scrambled version.
+          </p>
+          <p class="text-primary">
+            You’ll immediately get a key file back, download and keep it safe. To decrypt later, just upload that key with your encrypted file and you’ll get the original back.
+          </p>
+          <p class="text-primary">
+            Heads up: lose the key and you lose access. No backups & no recovery.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="https://secvaultproject.netlify.app/" class="btn btn--bg" target="_blank">Live Demo</a>
         </div>
       </div>
     </section>
@@ -98,10 +104,10 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                SecVault is a secure file vault web app built for privacy-first users. It uses WebCrypto to encrypt files directly in the browser before they ever leave the user's device. The server never sees the unencrypted data, and files can be safely stored or shared with confidence.
+                SecVault is a mini file vault app that focuses on privacy. It uses the browser’s Web Crypto API to encrypt your files before they’re sent anywhere, which means no one but you, not even me, ees the real content. Even the server just stores the encrypted version (not the key!).
               </p>
               <p class="project-details__desc-para">
-                It was built to demonstrate end-to-end encryption principles, client-server coordination, and secure frontend UX in a full-stack deployment.
+                It’s a full-stack build using Flask for the backend and basic file handling, hosted on Render and Netlify. Clean, lightweight, and built with security in mind.
               </p>
             </div>
 
@@ -114,13 +120,15 @@
                 <div class="skills__skill">Flask</div>
                 <div class="skills__skill">Python</div>
                 <div class="skills__skill">WebCrypto API</div>
+                <div class="skills__skill">Render</div>
+                <div class="skills__skill">Netlify</div>
               </div>
             </div>
 
             <div class="project-details__links">
               <h3 class="project-details__content-title">See Live</h3>
               <a
-                href="#"
+                href="https://secvaultproject.netlify.app/"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
                 >Live Link</a
