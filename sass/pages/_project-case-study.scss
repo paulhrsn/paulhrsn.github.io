@@ -2,8 +2,8 @@
   color: #fff;
   background: linear-gradient(
       to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+      rgba(15, 23, 42, 0.9),
+      rgba(15, 23, 42, 0.9)
     ),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
@@ -40,6 +40,9 @@
 }
 
 .project-details {
+  background-color: #0b1f3a;
+  color: #fff;
+
   &__content {
     padding: 8rem 0;
     max-width: 90rem;
@@ -62,22 +65,27 @@
 
   &__showcase-img {
     width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   }
+
   &__content-main {
     width: 100%;
     max-width: 70rem;
     margin: auto;
   }
+
   &__desc {
     margin: 0 0 7rem 0;
 
     &-para {
       font-size: 1.8rem;
       line-height: 1.7;
-      color: grey;
+      color: #ccc;
       margin-bottom: 2rem;
     }
   }
+
   &__tools-used {
     margin: 0 0 7rem 0;
 
@@ -85,19 +93,22 @@
       display: flex;
       flex-wrap: wrap;
     }
+
     &-item {
       padding: 1rem 2rem;
       margin-bottom: 1.5rem;
       margin-right: 1.5rem;
       font-size: 1.6rem;
-      background: rgba(#999, 0.2);
+      background: rgba(#ccc, 0.2);
       border-radius: $commonBorderRadius;
       font-weight: 600;
-      color: #777;
+      color: #bbb;
     }
   }
+
   &__links {
     margin: 0 0;
+
     &-btn {
       margin-right: 2rem;
       @include respond(phone) {
@@ -106,6 +117,7 @@
         margin-bottom: 2rem;
         text-align: center;
       }
+
       &:last-child {
         margin: 0;
         @include respond(phone) {
