@@ -259,6 +259,8 @@
         }
       }
 
+
+
       &-desc {
         font-size: 1.8rem;
         color: #d1d5db; // light gray text
@@ -281,6 +283,40 @@
     color: #d1d5db;
   }
 }
+
+#cyber-labs {
+  background-color: #0f172a; /* dark navy to match your site’s palette */
+  padding: 4rem 0;
+  border-top: 10px solid #1e293b; /* optional subtle divider */
+}
+
+#cyber-labs .heading-sec__main,
+#cyber-labs .heading-sec__sub {
+  color: #f8fafc; /* light gray/white text */
+}
+
+#cyber-labs .projects__row-content-title {
+  color: #e2e8f0; /* slightly dimmed header text */
+}
+
+#cyber-labs .projects__row-content-desc {
+  color: #cbd5e1; /* dimmed body text for visual hierarchy */
+  line-height: 1.6;
+  max-width: 65rem;
+  font-size: 15px;
+
+}
+
+#cyber-labs .projects__row {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#cyber-labs .projects__row:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 .contact {
