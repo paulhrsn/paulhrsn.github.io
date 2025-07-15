@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simon Smiles Case Study</title>
-    <meta name="description" content="Case study of Simon Smiles project by Paul Harrison" />
+    <title>Case Study: Simon Smiles</title>
+    <meta name="description" content="Case study page for Simon Smiles — a real-time facial emotion ‘Simon Says’ game built with Flask, TensorFlow & FER." />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -23,7 +23,7 @@
           <div class="header__logo-img-cont">
             <img
               src="./assets/jpeg/linkedinheadshot.jpeg"
-              alt="Paul Harrison Logo"
+              alt="Paul Harrison Logo Image"
               class="header__logo-img"
             />
           </div>
@@ -31,30 +31,14 @@
         </div>
         <div class="header__main">
           <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">Projects</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link">Contact</a>
-            </li>
+            <li class="header__link-wrapper"><a href="./index.html" class="header__link">Home</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li>
           </ul>
           <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
+            <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+            <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
           </div>
         </div>
       </div>
@@ -70,92 +54,96 @@
       </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">SecVault</h1>
+        <h1 class="heading-primary">Simon Smiles</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            <strong>SecVault</strong> lets you securely encrypt files right in your browser using <strong>AES-256</strong> encryption. The server never sees your original file—only the encrypted version. <br> <br>
-          </p>
-          <p class="text-primary">
-            Choose a file and click <strong>"Encrypt & Upload."</strong> to receive a key file. <strong>Download and store it safely.</strong> <br><br>
-          </p>
-          <p class="text-primary">
-            To decrypt later, upload the encrypted file and the key—your original file will be restored. <br><br>
-          </p>
-          <p class="text-primary">
-            <strong>No key means no access.</strong> There are no backups or recovery options. Keep your key safe.
+            A “Simon Says”–style webcam game that uses real-time facial emotion detection to score your reactions. When “Simon” prompts you, make the face—otherwise, don’t! 
+            <br> <br> <em> If it's your first time opening the website in awhile, it might take awhile to load. Please be patient and give it a minute!<strong> </strong> </em>
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://secvault-app.netlify.app/" class="btn btn--bg" target="_blank">Live Demo</a>
+          <a
+            href="https://simon-smiles-195275460518.europe-west1.run.app/"
+            class="btn btn--bg"
+            target="_blank"
+          >Play Live</a>
+          <a
+            href="https://github.com/paulhrsn/Simon-Smiles"
+            class="btn btn--bg"
+            style="margin-left: 1rem;"
+            target="_blank"
+          >Source Code</a>
         </div>
       </div>
     </section>
-    
 
+    <!-- Details Section -->
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
+          <!-- Screenshot -->
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/png/SecVaultCover.png"
-              alt="SecVault Screenshot"
+              src="./assets/png/gameplayphotosimonsmiles.png"
+              alt="Simon Smiles gameplay screenshot"
               class="project-details__showcase-img"
             />
           </div>
+
+          <!-- Description & Tools -->
           <div class="project-details__content-main">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                SecVault is a mini file vault app that focuses on privacy. It uses the browser’s Web Crypto API to encrypt your files before they’re sent anywhere, which means no one but you, not even me, ees the real content. Even the server just stores the encrypted version (not the key!).
+                Welcome to Simon Smiles! Players are given a prompt, given by either Simon or an impostor. If Simon gives a prompt, the player must match the expression. If it's an impostor, the player has to ignore the command.The backend (Flask + Gunicorn) receives a frame, processes it with FER (with TensorFlow), and returns emotion scores and bounding boxes in JSON. Frontend draws an overlay and updates lives/score. 
               </p>
               <p class="project-details__desc-para">
-                It’s a full-stack build using Flask for the backend and basic file handling, hosted on Render and Netlify. Clean, lightweight, and built with security in mind.
+                Deployed on Google Cloud Run with Docker for auto-scaling and low latency. Emphasis was on reliable face detection (switchable MTCNN) and smooth UI feedback loops.
               </p>
             </div>
 
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
+              <h3 class="project-details__content-title">Tools & Tech</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
                 <div class="skills__skill">Flask</div>
                 <div class="skills__skill">Python</div>
-                <div class="skills__skill">WebCrypto API</div>
-                <div class="skills__skill">Render</div>
-                <div class="skills__skill">Netlify</div>
+                <div class="skills__skill">TensorFlow</div>
+                <div class="skills__skill">FER (face-emotion)</div>
+                <div class="skills__skill">OpenCV</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">HTML/CSS</div>
+                <div class="skills__skill">Docker</div>
+                <div class="skills__skill">Google Cloud Run</div>
               </div>
             </div>
 
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">See It Live</h3>
               <a
-                href="https://secvault-app.netlify.app/"
+                href="https://simon-smiles-195275460518.europe-west1.run.app/"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
-              >
+              >Play Live</a>
               <a
-                href="https://github.com/paulhrsn/SecVault"
+                href="https://github.com/paulhrsn/Simon-Smiles"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >Code Link</a
-              >
+              >View Code</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
+            <h2 class="heading heading-sm main-footer__heading-sm"><span>Social</span></h2>
             <div class="main-footer__social-cont">
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/-paul-harrison/">
                 <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn icon" />
@@ -167,15 +155,10 @@
           </div>
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">Paul Harrison</h4>
-            <p class="main-footer__short-desc">
-              Computer Science @ University of Michigan — interested in cybersecurity and secure software development.
-            </p>
+            <p class="main-footer__short-desc">CS @ University of Michigan — cybersecurity & software engineering.</p>
           </div>
         </div>
-
-        <div class="main-footer__lower">
-          &copy; 2025 Paul Harrison. All rights reserved.
-        </div>
+        <div class="main-footer__lower">&copy; 2025 Paul Harrison. All rights reserved.</div>
       </div>
     </footer>
 
