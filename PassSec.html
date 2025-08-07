@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PassSec</title>
-    <meta name="description" content="Case study page of Project" />
+    <meta name="description" content="PassSec — Security+ study web app with quizzes, labs, auth, and a progress dashboard." />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -17,13 +17,14 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
               src="./assets/jpeg/linkedinheadshot.jpeg"
-              alt="Ram Maheshwari Logo Image"
+              alt="Paul Harrison Logo Image"
               class="header__logo-img"
             />
           </div>
@@ -32,18 +33,16 @@
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./index.html" class="header__link">Home</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="./index.html#about" class="header__link">About</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
+              <a href="./index.html#projects" class="header__link">Projects</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
+              <a href="./index.html#contact" class="header__link">Contact</a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -63,83 +62,106 @@
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
+            <li class="header__sm-menu-link"><a href="./index.html">Home</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#about">About</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#projects">Projects</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
+
+    <!-- Hero -->
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
         <h1 class="heading-primary">PassSec</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Coming soon!
+            A full‑stack Security+ study app with quizzes, labs, JWT auth, and a progress dashboard.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="#" class="btn btn--bg" target="_blank" rel="noopener noreferrer">Live Link</a>
+          <a href="https://github.com/paulhrsn/PassSec" class="btn btn--bg" target="_blank" rel="noopener noreferrer">View Progress on GitHub</a>
         </div>
       </div>
     </section>
+
+    <!-- Details -->
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
               src="./assets/png/PassSec Demo SS.png"
-              alt="Project Image"
+              alt="PassSec dashboard screenshot"
               class="project-details__showcase-img"
             />
           </div>
+
           <div class="project-details__content-main">
+            <!-- Overview -->
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                PassSec is a full-stack web app designed to help users prepare for the CompTIA Security+ certification through hands-on, interactive learning. Full-stack, it was sculpted from the bottom up with a real-world context at the forefront.
+                PassSec is a full‑stack web app designed to help users prepare for the CompTIA Security+ certification through hands‑on, interactive learning. It includes a
+                <strong>Quiz Mode</strong> (scored, domain‑based questions), a <strong>Lab Mode</strong> (realistic scenario investigations), <strong>user authentication</strong>,
+                <strong>JWT‑protected APIs</strong>, and a <strong>personalized dashboard</strong>.
               </p>
               <p class="project-details__desc-para">
-                Features include Quiz Mode (scored, domain-based questions), Lab Mode (realistic scenario-based simulations), user authentication, JWT-protected APIs, and a personalized dashboard — all deployed using Flask, React, Tailwind, and PostgreSQL.
-              </p>              
+                The stack uses a Flask API with SQLAlchemy, a PostgreSQL database, and a React + Tailwind frontend. Deployment targets are Cloud Run (API) and Netlify (frontend).
+              </p>
+
+              <!-- GitHub callout -->
+              <p class="project-details__desc-para" style="margin-top:1.2rem;">
+                <strong>See ongoing progress:</strong>
+                I’m actively shipping features and documenting milestones.  
+                <a href="https://github.com/paulhrsn/PassSec" target="_blank" rel="noopener noreferrer" style="font-weight:700; text-decoration:underline;">
+                  Check out the GitHub repository
+                </a>.
+              </p>
             </div>
+
+            <!-- Tools -->
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">Coming soon!</div>
+                <div class="skills__skill">Flask</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">SQLAlchemy</div>
+                <div class="skills__skill">PostgreSQL</div>
+                <div class="skills__skill">JWT</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">Tailwind CSS</div>
+                <div class="skills__skill">Docker</div>
+                <div class="skills__skill">Cloud Run</div>
+                <div class="skills__skill">Netlify</div>
               </div>
             </div>
+
+            <!-- Links -->
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">Links</h3>
               <a
                 href="#"
                 class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
+                target="_blank" rel="noopener noreferrer"
+              >Live App</a>
               <a
-                href="#"
+                href="https://github.com/paulhrsn/PassSec"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
+                target="_blank" rel="noopener noreferrer"
+              >GitHub Repo</a>
             </div>
+
+           
+
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -148,40 +170,11 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/-paul-harrison/">
+                <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
+              <a target="_blank" rel="noreferrer" href="https://github.com/paulhrsn">
+                <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="GitHub" />
               </a>
             </div>
           </div>
@@ -192,12 +185,12 @@
             </p>
           </div>
         </div>
-
         <div class="main-footer__lower">
-          &copy;  2025 Paul Harrison. All rights reserved.
+          &copy; 2025 Paul Harrison. All rights reserved.
         </div>
       </div>
     </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>
