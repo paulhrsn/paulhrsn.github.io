@@ -195,6 +195,15 @@ textarea {
   background: #0f172a;
   color: #fff;
 }
+.btn--ghost {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  box-shadow: none;
+}
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 .btn--theme-inv {
   color: #0f172a;
   background: #fff;
@@ -301,6 +310,12 @@ textarea {
   margin-top: 5rem;
   text-align: center;
 }
+.home-hero__cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
 .home-hero__cta .btn {
   padding: 2rem 4rem;
   font-size: 1.8rem;
@@ -312,6 +327,9 @@ textarea {
 }
 .home-hero__cta .btn:hover {
   background: rgb(11.1512195122, 99.1219512195, 242.8487804878);
+}
+.home-hero__cta .btn--ghost {
+  background: transparent;
 }
 
 .heading-primary {
@@ -430,6 +448,9 @@ textarea {
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 5rem;
   margin-bottom: 11rem;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 @media only screen and (max-width: 56.25em) {
   .projects__row {
@@ -437,18 +458,32 @@ textarea {
     grid-gap: 2rem;
     margin-bottom: 8rem;
     text-align: center;
+    padding: 0;
   }
+}
+.projects__row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(2, 6, 23, 0.28);
 }
 .projects__row:last-child {
   margin-bottom: 0;
 }
 .projects__row-img-cont {
   overflow: hidden;
+  border-radius: 10px;
 }
 .projects__row-img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+.projects__row-content-meta {
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #93c5fd;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
 }
 .projects__row-content {
   padding: 2rem 0;
@@ -490,6 +525,21 @@ textarea {
 }
 .projects .heading-sec__sub {
   color: #d1d5db;
+}
+
+.experience {
+  background: #0b1222;
+}
+.experience .heading-sec__main,
+.experience .heading-sec__sub,
+.experience .projects__row-content-title,
+.experience .projects__row-content-desc {
+  color: #f8fafc;
+}
+.experience .projects__row {
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(15, 23, 42, 0.75);
+  grid-template-columns: 1fr;
 }
 
 #cyber-labs {

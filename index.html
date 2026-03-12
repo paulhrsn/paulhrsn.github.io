@@ -34,6 +34,7 @@
           <ul class="header__links">
             <li class="header__link-wrapper"><a href="./index.html" class="header__link">Home</a></li>
             <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#experience" class="header__link">Experience</a></li>
             <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
             <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li>
           </ul>
@@ -48,6 +49,7 @@
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link"><a href="./index.html">Home</a></li>
             <li class="header__sm-menu-link"><a href="./index.html#about">About</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#experience">Experience</a></li>
             <li class="header__sm-menu-link"><a href="./index.html#projects">Projects</a></li>
             <li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li>
           </ul>
@@ -58,15 +60,16 @@
     <!-- Hero Section -->
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Hey there — I'm <span class="no-wrap">Paul</span>.</h1>
-        <p class="heading-sub">Thanks for stopping by!</p>
+        <h1 class="heading-primary">I'm <span class="no-wrap">Paul Harrison</span>.<br/>I build scalable software.</h1>
+        <p class="heading-sub">Computer Science @ Michigan | SWE + AI + Security</p>
         <div class="home-hero__info">
           <p class="text-primary">
-            Hi! My name's Paul. I was born in France, grew up in Chicago and now I'm studying Computer Science at the University of Michigan. I have huge interests in Cybersecurity, Software Engineering, and all things data.
+            I design and ship full-stack products across modern web stacks and cloud infrastructure. My recent work spans Vue + TypeScript frontends, FastAPI services, data pipelines, and ML-assisted systems focused on reliability, performance, and strong engineering fundamentals.
           </p>
         </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
+        <div class="home-hero__cta home-hero__cta-group">
+          <a href="./#projects" class="btn btn--bg">View Projects</a>
+          <a href="./#experience" class="btn btn--ghost">Experience</a>
         </div>
       </div>
       <div class="home-hero__socials">
@@ -95,10 +98,10 @@
             <h3 class="about__content-title">Get to know me</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                Hey! I’m <strong>Paul Harrison</strong>. I’m exploring both <strong>Cybersecurity</strong> and <strong>Software Engineering</strong> through hands-on projects, coursework, and internships alike.
+                I'm <strong>Paul Harrison</strong>, a Software Engineering-focused Computer Science student at the University of Michigan. I enjoy building production-minded systems where clean architecture, strong UX, and measurable impact all matter.
               </p>
               <p class="about__content-details-para">
-                I love building things, ethically breaking things, and learning how systems work under the hood. Whether it be writing code, analyzing vulnerabilities, or just optimizations, I’m always trying to make systems cleaner, faster, or more secure.
+                From backend APIs and data workflows to frontend product experiences, I like owning features end-to-end. I care about pragmatic engineering: writing maintainable code, validating with real users, and continuously improving performance and reliability.
                 <br />
                 Feel free to <a href="#contact" style="font-weight: bold; color: #0062b9; text-decoration: underline;">contact me here</a>.
               </p>
@@ -107,12 +110,61 @@
           <div class="about__content-skills">
             <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
+              <div class="skills__skill">TypeScript</div>
+              <div class="skills__skill">JavaScript</div>
               <div class="skills__skill">C++</div>
               <div class="skills__skill">Python</div>
               <div class="skills__skill">SQL</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">Vue 3</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">FastAPI</div>
+              <div class="skills__skill">Flask</div>
+              <div class="skills__skill">PostgreSQL</div>
+              <div class="skills__skill">Firebase</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">Google Cloud Run</div>
+              <div class="skills__skill">Git</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Technical Experience</span>
+          <span class="heading-sec__sub">Internship experience building and shipping software in startup and product environments.</span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Whomlab · Full-Stack Software Engineer Intern</h3>
+              <p class="projects__row-content-meta">Prague, Czech Republic | Jan 2026 - Present</p>
+              <p class="projects__row-content-desc">
+                Architected a Vue 3 + TypeScript frontend with responsive components, MediaRecorder-based audio capture, and Pinia state management. Built FastAPI + Firebase backend services for survey workflows, auth, and audio response handling with robust validation and service-layer abstractions.
+              </p>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Charlemagne Labs · AI & Security Software Engineering Intern</h3>
+              <p class="projects__row-content-meta">Ann Arbor, MI | Aug 2025 - Dec 2025</p>
+              <p class="projects__row-content-desc">
+                Built fine-tuning and inference optimization pipelines for small language models on cybersecurity datasets, and developed evaluation infrastructure to benchmark accuracy, latency, and robustness across realistic threat scenarios.
+              </p>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">SupermaxCloud · Cybersecurity & Infrastructure Engineering Intern</h3>
+              <p class="projects__row-content-meta">Chicago, IL | May 2025 - Aug 2025</p>
+              <p class="projects__row-content-desc">
+                Automated vulnerability scanning and observability workflows using SIEM tooling, infrastructure monitoring, and security policy automation, reducing manual security assessment effort while improving detection and response coverage.
+              </p>
             </div>
           </div>
         </div>
@@ -124,8 +176,27 @@
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">Selected software projects with a focus on full-stack engineering, data systems, and production deployment.</span>
         </h2>
         <div class="projects__content">   
+
+            <!-- Whaleden -->
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/png/whaleden.png"
+                  alt="Whaleden project screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Whaleden Comic Artist Discovery System</h3>
+                <p class="projects__row-content-desc">
+                  Building a multi-source talent discovery pipeline to identify and rank 500+ comic artists across Bluesky and Reddit. Includes resilient scraping architecture, deduplication, normalized storage, and planned CV/LLM-based portfolio scoring for style and quality analysis.
+                </p>
+              </div>
+            </div>
 
             <!-- PassSec -->
             <div class="projects__row">
@@ -140,7 +211,7 @@
               <div class="projects__row-content">
                 <h3 class="projects__row-content-title">PassSec</h3>
                 <p class="projects__row-content-desc">
-                  PassSec is my current project and most ambitious yet: a full-stack web application combining PostgreSQL for data storage, a Flask backend, and a React + Tailwind CSS frontend. It gives users a dynamic, trackable study experience for the CompTIA Security+ certification exam.
+                  Full-stack web app for Security+ preparation with React + Tailwind frontend, Flask REST API, JWT authentication, and PostgreSQL-backed quiz content. Features domain-based filtering, history tracking, and cloud deployment across Google Cloud Run and Netlify.
                 </p>
                 <a
                   href="./PassSec.html"
@@ -155,7 +226,7 @@
             <div class="projects__row">
               <div class="projects__row-content">
                 <h3 class="projects__row-content-title">Simon Smiles</h3>
-                <p class="projects__row-content-desc"> A webcam game using real-time facial emotion recognition. Captures frames via OpenCV, runs inference with TensorFlow + FER, and serves results through a Flask API. Deployed on Cloud Run (Docker).
+                <p class="projects__row-content-desc">Real-time facial expression game powered by Flask, OpenCV, and FER inference, with a responsive browser UI and webcam integration. Deployed to Google Cloud Run with production HTTPS and CORS configuration.
                 </p>
                 <a href="./Simon-Smiles.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Check me out!</a>
               </div>
@@ -169,29 +240,7 @@
               </div>
             </div>
 
-            <!-- SecVault -->
-            <div class="projects__row">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/png/SecVaultCover.png"
-                  alt="SecVault Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">SecVault</h3>
-                <p class="projects__row-content-desc">
-                  End-to-end encryption done in your browser. SecVault makes sure your files stay private, with AES-256 encryption applied before uploading, so not even the server ever sees your data.
-                </p>
-                <a
-                  href="./SecVault.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >Or check me out!</a
-                >
-              </div>
-            </div>
+
         </div>
       </div>
     </section>
@@ -232,26 +281,21 @@
   </div>
 <!-- Passive Recon – supermaxcloud.com -->
 <div class="projects__row">
-  <!-- move this first -->
-  <div class="projects__row">
-    <div class="projects__row-content">
-      <h3 class="projects__row-content-title">Passive Recon – [REDACTED]</h3>
-      <p class="projects__row-content-desc">
-        Performed passive reconnaissance on a live domain of using DNS, WHOIS, Shodan, and DNSDumpster. Created a detailed PDF report including findings and security recommendations. 
-        Attached is a redacted version.
-      </p>
-      <a
-        href="/assets/pdf/Portfolio_Passive_Recon_Report_Redacted.pdf"
-        class="btn btn--med btn--theme dynamicBgClr"
-        target="_blank"
-      >
-        View Full Report (PDF)
-      </a>
-    </div>
+  <div class="projects__row-content">
+    <h3 class="projects__row-content-title">Passive Recon – [REDACTED]</h3>
+    <p class="projects__row-content-desc">
+      Performed passive reconnaissance on a live domain using DNS, WHOIS, Shodan, and DNSDumpster. Created a detailed PDF report including findings and security recommendations.
+      Attached is a redacted version.
+    </p>
+    <a
+      href="/assets/pdf/Portfolio_Passive_Recon_Report_Redacted.pdf"
+      class="btn btn--med btn--theme dynamicBgClr"
+      target="_blank"
+    >
+      View Full Report (PDF)
+    </a>
   </div>
-  
 
-  <!-- then the image -->
   <div class="projects__row-img-cont">
     <img
       src="./assets/png/Portfolio_Passive_Recon_Report_Redacted-1.png"
@@ -341,7 +385,7 @@
             <p class="main-footer__short-desc"></p>
           </div>
         </div>
-        <div class="main-footer__lower">&copy; 2025 Paul Harrison. All rights reserved.</div>
+        <div class="main-footer__lower">&copy; 2026 Paul Harrison. All rights reserved.</div>
       </div>
     </footer>
 
