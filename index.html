@@ -62,11 +62,11 @@
     <!-- Hero Section -->
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">I'm <span class="no-wrap">Paul Harrison</span>.<br/>I build scalable software.</h1>
-        <p class="heading-sub">Computer Science @ Michigan | SWE + AI + Security</p>
+        <h1 class="heading-primary">I'm <span class="no-wrap">Paul Harrison</span>.<br/>I build software. Lately, it talks back.</h1>
+        <p class="heading-sub">Computer Science @ Michigan | AI + SWE + Security</p>
         <div class="home-hero__info">
           <p class="text-primary">
-            I design and ship full-stack products across modern web stacks and cloud infrastructure. My recent work spans Vue + TypeScript frontends, FastAPI services, data pipelines, and ML-assisted systems focused on reliability, performance, and strong engineering fundamentals.
+            I design and ship full-stack products across modern web stacks and cloud infrastructure. My recent work spans voice agents, LLM pipelines, Vue + TypeScript frontends, FastAPI services, and agentic systems — built with a focus on reliability, performance, and strong engineering fundamentals.
           </p>
         </div>
         <div class="home-hero__cta home-hero__cta-group">
@@ -113,17 +113,27 @@
           <div class="about__content-skills">
             <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
-              <div class="skills__skill">TypeScript</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">C++</div>
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">SQL</div>
+              <div class="skills__group-label">AI</div>
+              <div class="skills__skill">Ollama</div>
+              <div class="skills__skill">LiveKit</div>
+              <div class="skills__skill">Whisper</div>
+              <div class="skills__skill">Hugging Face</div>
+              <div class="skills__skill">LoRA</div>
+              <div class="skills__group-label">Frontend</div>
               <div class="skills__skill">Vue 3</div>
               <div class="skills__skill">React</div>
+              <div class="skills__skill">TypeScript</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__group-label">Backend</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">C</div>
+              <div class="skills__skill">C++</div>
               <div class="skills__skill">FastAPI</div>
               <div class="skills__skill">Flask</div>
               <div class="skills__skill">PostgreSQL</div>
               <div class="skills__skill">Firebase</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__group-label">Infra</div>
               <div class="skills__skill">Docker</div>
               <div class="skills__skill">Google Cloud Run</div>
               <div class="skills__skill">Git</div>
@@ -138,7 +148,7 @@
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Technical Experience</span>
-          <span class="heading-sec__sub">Internship experience building and shipping software in startup and product environments.</span>
+          <span class="heading-sec__sub">Internship experience building and shipping AI-driven software in startup and product environments.</span>
         </h2>
         <div class="projects__content">
           <div class="projects__row">
@@ -154,7 +164,7 @@
               <h3 class="projects__row-content-title">Whomlab · Full-Stack Software Engineer Intern</h3>
               <p class="projects__row-content-meta">Prague, Czech Republic | Jan 2026 - Present</p>
               <p class="projects__row-content-desc">
-                Architected a Vue 3 + TypeScript frontend with responsive components, MediaRecorder-based audio capture, and Pinia state management. Built FastAPI + Firebase backend services for survey workflows, auth, and audio response handling with robust validation and service-layer abstractions.
+                Designed and built a full conversational survey platform — LiveKit-powered voice agent with Whisper transcription at the core, Vue 3 + TypeScript frontend with MediaRecorder-based audio capture, and FastAPI + Firebase backend handling auth, survey workflows, and response storage.
               </p>
             </div>
           </div>
@@ -172,7 +182,7 @@
               <h3 class="projects__row-content-title">Charlemagne Labs · AI & Security Software Engineering Intern</h3>
               <p class="projects__row-content-meta">Ann Arbor, MI | Aug 2025 - Dec 2025</p>
               <p class="projects__row-content-desc">
-                Built fine-tuning and inference optimization pipelines for small language models on cybersecurity datasets, and developed evaluation infrastructure to benchmark accuracy, latency, and robustness across realistic threat scenarios.
+                Built LoRA fine-tuning and inference optimization pipelines for Gemma 3 270M using Hugging Face, Ollama, and LiteLLM. Developed evaluation infrastructure to benchmark accuracy, latency, and robustness on phishing URL classification tasks.
               </p>
             </div>
           </div>
@@ -220,32 +230,8 @@
               <div class="projects__row-content">
                 <h3 class="projects__row-content-title">Whaleden Comic Artist Discovery System</h3>
                 <p class="projects__row-content-desc">
-                  Building a multi-source talent discovery pipeline to identify and rank 500+ comic artists across Bluesky and Reddit. Includes resilient scraping architecture, deduplication, normalized storage, and planned CV/LLM-based portfolio scoring for style and quality analysis.
+                  An agentic data pipeline that discovers and ranks 500+ comic artists across Bluesky and Reddit. Features a 4-stage Ollama/Phi-3.5 LLM pipeline with schema-constrained JSON outputs and confidence thresholds, alongside resilient scraping, deduplication, and normalized storage.
                 </p>
-              </div>
-            </div>
-
-            <!-- PassSec -->
-            <div class="projects__row">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/png/PassSecDemo.png"
-                  alt="Project 3 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">PassSec</h3>
-                <p class="projects__row-content-desc">
-                  Full-stack web app for Security+ preparation with React + Tailwind frontend, Flask REST API, JWT authentication, and PostgreSQL-backed quiz content. Features domain-based filtering, history tracking, and a deployment plan for Google Cloud Run and Netlify.
-                </p>
-                <a
-                  href="./PassSec.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >CHECK ME OUT!</a
-                >
               </div>
             </div>
 
@@ -300,12 +286,37 @@
 <section id="cyber-labs" class="projects sec-pad">
   <div class="main-container">
     <h2 class="heading heading-sec heading-sec__mb-bg">
-      <span class="heading-sec__main">Notes, Bonus Projects, Labs, Certs, & Misc</span>
+      <span class="heading-sec__main">Bonus Projects, Labs, & Certs</span>
       <span class="heading-sec__sub">
         Hands-on labs, mini-projects, and exercises exploring cybersecurity concepts, risk assessments, and security tooling.
       </span>
     </h2>
     <div class="projects__content">
+
+      <!-- PassSec -->
+      <div class="projects__row">
+        <div class="projects__row-img-cont">
+          <img
+            src="./assets/png/PassSecDemo.png"
+            alt="PassSec Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">PassSec</h3>
+          <p class="projects__row-content-desc">
+            Full-stack web app for Security+ preparation with React + Tailwind frontend, Flask REST API, JWT authentication, and PostgreSQL-backed quiz content. Features domain-based filtering, history tracking, and a deployment plan for Google Cloud Run and Netlify.
+          </p>
+          <a
+            href="./PassSec.html"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >CHECK ME OUT!</a
+          >
+        </div>
+      </div>
+
         <!-- Google Cybersecurity Certificate Overview -->
   <div class="projects__row">
     <div class="projects__row-img-cont">

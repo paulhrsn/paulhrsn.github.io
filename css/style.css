@@ -439,6 +439,19 @@ textarea {
   color: white;
   transform: scale(1.05);
 }
+.skills__group-label {
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+  margin-bottom: -0.25rem;
+}
+.skills__group-label:first-child {
+  margin-top: 0;
+}
 
 .projects {
   background: #111827;
@@ -1019,6 +1032,19 @@ textarea {
 .skills__skill:hover {
   transform: scale(1.05);
   background-color: #dbeafe;
+}
+.skills__group-label {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.8rem;
+  margin-bottom: -0.25rem;
+}
+.skills__group-label:first-child {
+  margin-top: 0;
 }
 
 .mouse {
