@@ -36,3 +36,11 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+// Keep footer copyright years current across all pages.
+const currentYearNodes = document.querySelectorAll('[data-current-year]')
+const currentYear = new Date().getFullYear()
+
+for (let i = 0; i < currentYearNodes.length; i++) {
+  currentYearNodes[i].textContent = currentYear
+}
