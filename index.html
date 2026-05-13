@@ -119,6 +119,10 @@
               <div class="skills__skill">Whisper</div>
               <div class="skills__skill">Hugging Face</div>
               <div class="skills__skill">LoRA</div>
+              <div class="skills__skill">LiteLLM</div>
+              <div class="skills__skill">Venice AI</div>
+              <div class="skills__skill">LLM Evaluation</div>
+              <div class="skills__skill">Schema-constrained JSON</div>
               <div class="skills__group-label">Frontend</div>
               <div class="skills__skill">Vue 3</div>
               <div class="skills__skill">React</div>
@@ -137,6 +141,7 @@
               <div class="skills__skill">Docker</div>
               <div class="skills__skill">Google Cloud Run</div>
               <div class="skills__skill">Git</div>
+              <div class="skills__skill">Web Scraping</div>
             </div>
           </div>
         </div>
@@ -164,7 +169,7 @@
               <h3 class="projects__row-content-title">Whomlab · Full-Stack Software Engineer Intern</h3>
               <p class="projects__row-content-meta">Prague, Czech Republic | Jan 2026 - Present</p>
               <p class="projects__row-content-desc">
-                Designed and built a full conversational survey platform — LiveKit-powered voice agent with Whisper transcription at the core, Vue 3 + TypeScript frontend with MediaRecorder-based audio capture, and FastAPI + Firebase backend handling auth, survey workflows, and response storage.
+                Built a voice-driven survey platform projected to serve 7,500+ users across five EU-financed programs. Engineered a LiveKit WebRTC pipeline (browser mic → LiveKit Cloud SFU → Python livekit-agents worker with Whisper STT → Venice AI LLM → OpenAI TTS). Shipped Vue 3 + TypeScript frontend with a custom useLiveKit composable, MediaRecorder capture, data-channel dispatch, and Pinia state — backed by FastAPI + Firebase Auth, Firestore, and Cloud Storage.
               </p>
             </div>
           </div>
@@ -182,7 +187,7 @@
               <h3 class="projects__row-content-title">Charlemagne Labs · AI & Security Software Engineering Intern</h3>
               <p class="projects__row-content-meta">Ann Arbor, MI | Aug 2025 - Dec 2025</p>
               <p class="projects__row-content-desc">
-                Built LoRA fine-tuning and inference optimization pipelines for Gemma 3 270M using Hugging Face, Ollama, and LiteLLM. Developed evaluation infrastructure to benchmark accuracy, latency, and robustness on phishing URL classification tasks.
+                Fine-tuned Gemma 3 (270M) with LoRA adapters for phishing URL classification, merging weights with a custom classifier head for dependency-free inference in a FastAPI serving layer. Built a multi-backend evaluation harness (Hugging Face, Ollama, LiteLLM for GPT/Gemini) benchmarking accuracy, precision/recall, and latency across realistic phishing and social-engineering scenarios. Engineered URL, DOM, and headless-browser feature extractors — domain signals, password-field and urgency-language detection, image hashing for look-alike site detection.
               </p>
             </div>
           </div>
@@ -200,7 +205,7 @@
               <h3 class="projects__row-content-title">SupermaxCloud · Cybersecurity & Infrastructure Engineering Intern</h3>
               <p class="projects__row-content-meta">Chicago, IL | May 2025 - Aug 2025</p>
               <p class="projects__row-content-desc">
-                Automated vulnerability scanning and observability workflows using SIEM tooling, infrastructure monitoring, and security policy automation, reducing manual security assessment effort while improving detection and response coverage.
+                Automated vulnerability scanning across internal and internet-facing systems with Nmap and Shodan, cutting manual review time by 70%. Managed infrastructure security via firewall rules, access controls, and Wazuh-based monitoring. Built Zabbix and Kuma dashboards and health checks, improving visibility into uptime and service issues across the fleet.
               </p>
             </div>
           </div>
