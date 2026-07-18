@@ -2,46 +2,46 @@
 
 ## 💻 Local Dev
 
-- `npm install` — install all project dependencies
-- `npm run compile:scss` — compile SCSS to CSS (watch mode)
-- `npx serve .` — run local dev server (http://localhost:3000)
+- `npm install` - install all project dependencies
+- `npm run compile:scss` - compile SCSS to CSS (watch mode)
+- `npx serve .` - run local dev server (http://localhost:3000)
 
 ## 🧠 Git Basics
 
-- `git add .` — stage all changes
-- `git commit -m "msg"` — commit changes
-- `git push` — push to GitHub
-- `git pull` — pull latest changes from GitHub
-- `git stash` / `git stash pop` — temporarily save/restore uncommitted changes
+- `git add .` - stage all changes
+- `git commit -m "msg"` - commit changes
+- `git push` - push to GitHub
+- `git pull` - pull latest changes from GitHub
+- `git stash` / `git stash pop` - temporarily save/restore uncommitted changes
 
 ## ⚙️ One-time setup
 
-- `npm install -g sass` — install Sass globally
+- `npm install -g sass` - install Sass globally
 
 ## 🌱 Git Branch Workflow
 
-- `git checkout -b branch-name` — create and switch to a new branch  
+- `git checkout -b branch-name` - create and switch to a new branch
   ↳ _Use this to test new features or edits without touching `main`_
 
-- `git switch branch-name` — switch to another branch (newer shorthand)
+- `git switch branch-name` - switch to another branch (newer shorthand)
 
-- `git add .` — stage all changes
+- `git add .` - stage all changes
 
-- `git commit -m "msg"` — commit changes with a message
+- `git commit -m "msg"` - commit changes with a message
 
-- `git push -u origin branch-name` — push your branch to GitHub (first time)  
+- `git push -u origin branch-name` - push your branch to GitHub (first time)
   ↳ After that, you can just do: `git push`
 
-- `git checkout main` — switch back to your main branch
+- `git checkout main` - switch back to your main branch
 
-- `git merge branch-name` — merge another branch into your current one  
+- `git merge branch-name` - merge another branch into your current one
   ↳ _Run this from `main` to merge in your feature branch_
 
-- `git branch -d branch-name` — delete a branch locally after merging
+- `git branch -d branch-name` - delete a branch locally after merging
 
-- `git fetch --all` — get all remote updates
+- `git fetch --all` - get all remote updates
 
-- `git log` — view commit history
+- `git log` - view commit history
 
 ### 🧠 Pro Tip Aliases (run once)
 ```bash
