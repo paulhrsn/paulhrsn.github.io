@@ -528,6 +528,16 @@ textarea {
   line-height: 1.7;
   margin-bottom: 3rem;
 }
+.projects__row-links {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 56.25em) {
+  .projects__row-links {
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .projects__row-content-desc {
     font-size: 1.7rem;
